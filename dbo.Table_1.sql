@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].Pet
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [TypeId] INT NOT NULL
+	CONSTRAINT TypeIdFK FOREIGN KEY (TypeId) REFERENCES PetType(id)
+)

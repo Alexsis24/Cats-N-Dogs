@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].PetType
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [PetTypeName] NVARCHAR(50) NOT NULL
+)
